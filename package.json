@@ -1,6 +1,6 @@
 {
   "name": "template-gatsby",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "license": "Unlicense",
   "description": "Template for a website with Gatsby and TypeScript",
