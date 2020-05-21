@@ -1,0 +1,18 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+/cypress/screenshots
+/cypress/videos
+
+# development
+/.cache
+*.log
+
+# production
+/public
+
+# misc
+.DS_Store
+.env*

@@ -1,0 +1,10 @@
+// https://www.typescriptlang.org/tsconfig
+// https://docs.cypress.io/guides/tooling/typescript-support.html#Configure-tsconfig-json
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "isolatedModules": false,
+    "types": ["cypress", "@types/testing-library__cypress"]
+  },
+  "exclude": []
+}
