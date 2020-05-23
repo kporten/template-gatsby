@@ -14,12 +14,12 @@
     "lint": "eslint --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx .",
     "test": "jest --watch",
     "test:ci": "jest --passWithNoTests",
+    "e2e": "cypress open",
+    "e2e:run": "cypress run",
+    "e2e:ci": "start-server-and-test start 8000 e2e:run",
+    "tsc:check": "tsc --project ./tsconfig.json && tsc --project ./cypress/tsconfig.json",
     "version": "auto-changelog --package --template keepachangelog --sort-commits relevance && git add CHANGELOG.md",
     "postversion": "git push --follow-tags",
-    "tsc:check": "tsc --project ./tsconfig.json && tsc --project ./cypress/tsconfig.json",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "cy:ci": "start-server-and-test start 8000 cy:run",
     "commit": "git-cz"
   },
   "dependencies": {
