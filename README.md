@@ -21,18 +21,26 @@ yarn install
 yarn start
 ```
 
-## Scripts
+## Development Scripts
 
 ```bash
-yarn start # start Gatsby development server
-yarn build # build production-ready Gatsby site
-yarn serve # serve production-ready Gatsby site
-yarn lint # lint your code with ESLint
-yarn test # execute your Jest tests
-yarn tsc:check # execute type check for your files
-yarn cy:open # open cypress to run tests manually
-yarn cy:run # run cypress to run tests headless
+yarn start # start gatsby development server
+yarn build # build production-ready gatsby site
+yarn serve # serve production-ready gatsby site
+yarn clean # clean gatsby development resources
+yarn lint # lint code with eslint
+yarn test # run jest tests
+yarn e2e # open cypress to start e2e tests manually
+yarn e2e:run # run cypress e2e tests
+yarn tsc:check # run type check for files
 yarn commit # commitizen friendly commit
+```
+
+## CI Scripts
+
+```bash
+yarn test:ci # run jest tests in ci mode
+yarn e2e:ci # run cypress e2e tests in ci mode
 ```
 
 ## Environment
