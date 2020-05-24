@@ -43,6 +43,8 @@ yarn test:ci # run jest tests in ci mode
 yarn e2e:ci # run cypress e2e tests in ci mode
 ```
 
+> This template contains a GitHub CI workflow that runs on push (except for tags) and pull request events.
+
 ## Environment
 
 - [TypeScript](https://www.typescriptlang.org/)
