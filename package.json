@@ -12,6 +12,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx .",
+    "hint": "hint ./src",
     "test": "jest --watch",
     "test:ci": "jest --passWithNoTests",
     "e2e": "cypress open",
@@ -61,10 +62,14 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "eslint-plugin-testing-library": "^3.1.4",
     "eslint-plugin-unicorn": "^20.1.0",
+    "hint": "^6.0.6",
     "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "start-server-and-test": "^1.11.0",
     "typescript": "^3.9.3"
+  },
+  "resolutions": {
+    "serialize-javascript": "^3.1.0"
   }
 }
