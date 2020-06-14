@@ -2,7 +2,7 @@
   "name": "template-gatsby",
   "version": "1.0.6",
   "private": false,
-  "license": "Unlicense",
+  "license": "MIT",
   "description": "Template for a website with Gatsby and TypeScript",
   "repository": "https://github.com/kporten/template-gatsby.git",
   "author": "Kevin Porten <hello@kevinporten.dev>",
