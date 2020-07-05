@@ -60,6 +60,7 @@ yarn e2e:ci # run cypress e2e tests in ci mode
 - [ESLint](https://eslint.org/)
 - [WebHint](https://webhint.io/)
 - [Prettier](https://prettier.io/)
+- [Snyk](https://snyk.io/)
 
 ### Tests
 
