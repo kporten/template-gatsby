@@ -15,5 +15,8 @@ module.exports = {
   },
   testURL: 'http://localhost:8000',
   setupFiles: ['<rootDir>/jest/loadershim.js'],
-  setupFilesAfterEnv: ['<rootDir>/jest/testing-library.js'],
+  setupFilesAfterEnv: [
+    '<rootDir>/jest/testing-library.js',
+    '<rootDir>/jest/jsdom.js',
+  ],
 };
