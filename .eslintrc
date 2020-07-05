@@ -46,6 +46,7 @@
       "files": ["cypress/e2e/**/*"],
       "rules": {
         "jest/expect-expect": "off",
+        "jest/valid-expect": "off",
         "testing-library/await-async-query": "off"
       }
     }
