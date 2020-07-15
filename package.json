@@ -13,15 +13,16 @@
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx .",
     "hint": "hint ./src",
-    "test": "jest --watch",
+    "type-check": "tsc --project ./tsconfig.json && tsc --project ./cypress/tsconfig.json",
+    "changelog": "auto-changelog --package --template keepachangelog --sort-commits relevance",
+    "test": "jest --watch --coverage --notify",
     "test:ci": "jest --passWithNoTests",
     "e2e": "cypress open",
     "e2e:run": "cypress run",
     "e2e:ci": "start-server-and-test start 8000 e2e:run",
-    "tsc:check": "tsc --project ./tsconfig.json && tsc --project ./cypress/tsconfig.json",
-    "version": "auto-changelog --package --template keepachangelog --sort-commits relevance && git add CHANGELOG.md",
-    "postversion": "git push --follow-tags",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "version": "yarn changelog && git add CHANGELOG.md",
+    "postversion": "git push --follow-tags"
   },
   "dependencies": {
     "gatsby": "^2.23.20",

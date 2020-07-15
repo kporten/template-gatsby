@@ -1,6 +1,9 @@
 // https://github.com/iamturns/eslint-config-airbnb-typescript
 {
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json", "./cypress/tsconfig.json"]
+  },
   "extends": [
     "airbnb-typescript",
     "airbnb/hooks",
@@ -17,9 +20,6 @@
     "prettier/@typescript-eslint",
     "prettier/unicorn"
   ],
-  "parserOptions": {
-    "project": ["./tsconfig.json", "./cypress/tsconfig.json"]
-  },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-var-requires": "off",

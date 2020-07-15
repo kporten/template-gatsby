@@ -32,11 +32,12 @@ yarn serve # serve production-ready gatsby site
 yarn clean # clean gatsby development resources
 yarn lint # lint code with eslint
 yarn hint # hints for code with webhint
+yarn type-check # run type check for files
+yarn changelog # create/update the changelog
 yarn test # run jest tests
 yarn e2e # open cypress to start e2e tests manually
 yarn e2e:run # run cypress e2e tests
-yarn tsc:check # run type check for files
-yarn commit # commitizen friendly commit
+yarn commit # commitizen friendly commit helper
 ```
 
 ## CI Scripts
@@ -46,7 +47,7 @@ yarn test:ci # run jest tests in ci mode
 yarn e2e:ci # run cypress e2e tests in ci mode
 ```
 
-> This template contains a GitHub CI workflow that runs on push (except for tags) and pull request events.
+> This project contains a GitHub CI workflow that runs on push (except for tags) and pull request events.
 
 ## Secrets
 
