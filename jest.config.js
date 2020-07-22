@@ -10,6 +10,7 @@ module.exports = {
   },
   testPathIgnorePatterns: ['node_modules', '\\.cache', 'public', 'cypress'],
   transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],
+  collectCoverageFrom: ['src/**/*'],
   globals: {
     __PATH_PREFIX__: '',
   },

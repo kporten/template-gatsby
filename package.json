@@ -15,7 +15,7 @@
     "hint": "hint ./src",
     "type-check": "tsc --project ./tsconfig.json && tsc --project ./cypress/tsconfig.json",
     "changelog": "auto-changelog --package --template keepachangelog --sort-commits relevance",
-    "test": "jest --watch --coverage --notify",
+    "test": "jest --watchAll --coverage --notify",
     "test:ci": "jest --passWithNoTests",
     "e2e": "cypress open",
     "e2e:run": "cypress run",
