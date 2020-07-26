@@ -1,16 +1,12 @@
 # Template Gatsby
 
 ![license](https://img.shields.io/github/license/kporten/template-gatsby)
-
 ![tag](https://img.shields.io/github/v/tag/kporten/template-gatsby)
-
 ![last-commit](https://img.shields.io/github/last-commit/kporten/template-gatsby)
-
 ![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)
-
 ![ci](https://github.com/kporten/template-gatsby/workflows/CI/badge.svg?branch=master&event=push)
 
-Template for a website with Gatsby and TypeScript
+Template for a website with Gatsby and TypeScript.
 
 ## Requirements
 
