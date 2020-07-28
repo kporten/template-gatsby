@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Run tests
-        run: yarn run test:ci
+        run: yarn test:ci
   e2e:
     runs-on: ubuntu-latest
     container: cypress/browsers:node12.16.2-chrome81-ff75
@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Run e2e
-        run: yarn run e2e:ci
+        run: yarn e2e:ci
   security:
     runs-on: ubuntu-latest
     steps:

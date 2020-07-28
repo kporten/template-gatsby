@@ -8,9 +8,7 @@
 
 Template for a website with Gatsby and TypeScript.
 
-## Requirements
-
-[Yarn 1 (Classic)](https://classic.yarnpkg.com/lang/en/)
+---
 
 ## Getting Started
 
@@ -19,7 +17,7 @@ yarn install
 yarn start
 ```
 
-## Development Scripts
+## Scripts
 
 ```bash
 yarn start # start gatsby development server
@@ -36,23 +34,38 @@ yarn e2e:run # run cypress e2e tests
 yarn commit # commitizen friendly commit helper
 ```
 
-## CI Scripts
+## GitHub Actions
 
-```bash
-yarn test:ci # run jest tests in ci mode
-yarn e2e:ci # run cypress e2e tests in ci mode
-```
-
-> This project contains a GitHub CI workflow that runs on push (except for tags) and pull request events.
-
-## Secrets
-
-You will need to define the following secrets to use this project with the initial CI workflow configuration.
+You will need to define the following secrets to use this project with the initial workflow configuration.
 
 ```ini
 # GitHub > Repository > Settings > Secrets
 SNYK_TOKEN=... # https://support.snyk.io/hc/en-us/articles/360004037537-Authentication-for-third-party-tools
 ```
+
+### Jobs
+
+- test (run jest tests: `yarn test:ci`)
+- e2e (run cypress tests: `yarn e2e:ci`)
+- security (check for vulnerabilities)
+
+## Publish
+
+On **commit** (git), the following commands are executed...
+
+- Hook `pre-commit`
+  - `yarn type-check`
+  - `yarn lint`
+  - `yarn hint`
+- Hook `commit-msg`
+  - `commitlint`
+
+On **push** (git), the following commands are executed...
+
+- Hook `pre-push`
+  - `yarn test:ci`
+
+---
 
 ## Environment
 
