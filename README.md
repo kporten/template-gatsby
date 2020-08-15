@@ -28,7 +28,8 @@ yarn lint # lint code with eslint
 yarn hint # hints for code with webhint
 yarn type-check # run type check for files
 yarn changelog # create/update the changelog
-yarn test # run jest tests
+yarn test # run jest tests and watch
+yarn test:all # run jest tests and watch all with coverage
 yarn e2e # open cypress to start e2e tests manually
 yarn e2e:run # run cypress e2e tests
 yarn commit # commitizen friendly commit helper
