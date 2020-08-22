@@ -41,6 +41,8 @@ You will need to define the following secrets to use this project with the initi
 
 ```ini
 # GitHub > Repository > Settings > Secrets
+CYPRESS_PROJECT_ID=... # https://docs.cypress.io/guides/dashboard/projects.html#Setup
+CYPRESS_RECORD_KEY=... # https://docs.cypress.io/guides/dashboard/projects.html#Setup
 SNYK_TOKEN=... # https://support.snyk.io/hc/en-us/articles/360004037537-Authentication-for-third-party-tools
 ```
 
