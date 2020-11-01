@@ -3,7 +3,7 @@ import React from 'react';
 
 import Index from './index';
 
-it('displays the correct message', () => {
+it('should display the correct message', () => {
   render(<Index />);
   expect(screen.getByRole('heading')).toHaveTextContent('Hello');
 });

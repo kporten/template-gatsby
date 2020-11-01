@@ -3,7 +3,7 @@ describe('Index', () => {
     cy.visit('/');
   });
 
-  it('displays the correct message', () => {
+  it('should display the correct message', () => {
     cy.findByText(/Hello/).should('contain', 'Gatsby');
   });
 });
