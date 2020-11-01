@@ -4,7 +4,7 @@ import React from 'react';
 
 const gatsby = jest.requireActual('gatsby');
 
-module.exports = {
+export default {
   ...gatsby,
   graphql: jest.fn(),
   Link: jest.fn().mockImplementation(
